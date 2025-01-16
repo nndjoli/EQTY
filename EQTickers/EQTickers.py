@@ -1,7 +1,5 @@
 import pandas
 import yfinance
-import matplotlib.pyplot
-
 
 class EQTYahoo:
 
