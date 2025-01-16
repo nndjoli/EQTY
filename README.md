@@ -1,4 +1,6 @@
-This CSV file contains data for 58,215 equity tickers collected from Yahoo Finance. It includes detailed information for each ticker with columns covering:
+This repository includes a [CSV file](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/EQTYahoo.csv) which contains data for 58,215 equity tickers collected from Yahoo Finance and a [class](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/EQTickers/EQTickers.py) built to interact directly with it. You can find a demo [here](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/EQTickers/Demo.ipynb). 
+
+ The CSV includes detailed information for each ticker with columns covering:
 
 - **Ticker**: The unique symbol for the equity.
 - **Company Name**: The full name of the company.
