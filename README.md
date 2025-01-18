@@ -2,7 +2,7 @@
 ### <u>**Description**</u>
 ---
 
-This program retrieves every available equity ticker from Yahoo Finance. As of January 17, 2025, it can collect more than 58,000 equity tickers and their associated informations. Since Yahoo Finance data is inherently delayed, speed was not the primary concern during development. On a typical connection, the script takes about three minutes to fetch all ticker data, generating a CSV file that is approximately 40 MB in size. A sample CSV (dated January 17, 2025) is included [here](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Data/EQTYahoo.zip).
+This program retrieves every available equity ticker from Yahoo Finance. As of January 17, 2025, it can collect more than 58,000 equity tickers and their associated informations. Since Yahoo Finance data is inherently delayed, speed was not the primary concern during development. On a typical connection, the script takes about three minutes to fetch all ticker data, generating a CSV file that is approximately 40 MB in size. A sample CSV (dated January 17, 2025) is included [here](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Package/EQTickers/Data/EQTYahoo.zip).
 
 ![Yahoo Finance](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Miscellaneous/image.png)
 
