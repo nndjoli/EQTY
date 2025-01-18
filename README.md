@@ -1,15 +1,15 @@
+
 ### <u>**Description**</u>
 ---
 
-This program retrieves every available equity ticker from Yahoo Finance. As of January 17, 2025, it can collect more than 50,000 tickers and all associated information. Since Yahoo Finance data is inherently delayed, speed was not the primary concern during development. On a typical connection, the script takes about three minutes to fetch all ticker data, generating a CSV file that is approximately 40 MB in size. A sample CSV (dated January 17, 2025) is included in the repository ZIP.
+This program retrieves every available equity ticker from Yahoo Finance. As of January 17, 2025, it can collect more than 58,000 equity tickers and their associated informations. Since Yahoo Finance data is inherently delayed, speed was not the primary concern during development. On a typical connection, the script takes about three minutes to fetch all ticker data, generating a CSV file that is approximately 40 MB in size. A sample CSV (dated January 17, 2025) is included [here](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Data/EQTYahoo.zip).
 
-![Yahoo Finance](<insert_image_url>)
+![Yahoo Finance](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Miscellaneous/image.png)
 
 ### <u>**Data Points Retrieved**</u>
 ---
 
 ```
-[
  'Ask',
  'Ask Size',
  'Average Analyst Rating',
@@ -95,7 +95,6 @@ This program retrieves every available equity ticker from Yahoo Finance. As of J
  'Two Hundred Day Average',
  'Two Hundred Day Average Change',
  'Two Hundred Day Average Change Percent'
-]
 ```
 
 ### <u>**Program Overview**</u>
@@ -106,18 +105,17 @@ The program intercepts specific HTTP requests from Yahoo Finance to gather these
 #### **Current Status**
 
 - **Automation Attempt**: 
-  - Successfully automated the retrieval of required cookies and parameters via SeleniumWire.
-  
-- **Issue Encountered**:  
-  - The target request does not always appear in SeleniumWire’s intercepted requests, likely due to Yahoo’s bot detection and blocking.
-  
-- **Additional Attempts**:  
-  - Using Undetected Chromedriver did not resolve the issue.  
-  - Proxies were considered but not tested.  
-  
-- **Request for Input**:  
-  - Seeking suggestions for further automation to make the program more accessible and user-friendly.
-  
-- **Current Solution**:  
-  - Developed a manual tutorial that ensures the program remains functional.
+  - Managed to automate the retrieval of necessary cookies and parameters using [Selenium Wire](https://github.com/wkeeling/selenium-wire). However, the target request is not consistently captured in SeleniumWire's intercepted requests, likely due to Yahoo's botdetection mechanisms.
+  - My attempts to solve the issue with [Undetected Chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) were unsuccessful. If you have any recommendations for improving the automation process to enhance the global accessibility and user-friendliness of the program, they would be greatly appreciated.
+ 
+#### **Tutorial**
+
+- A manual tutorial has been provided to ensure the program remains operational. You can find it [here](https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Guide.ipynb).
+
+
+
+
+
+
+
 
