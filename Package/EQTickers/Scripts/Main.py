@@ -1,5 +1,6 @@
 from pathlib import Path
 import re
+import yfinance
 
 from .Fetcher import (
     GetAllTickers as __GetAllTickers__,
@@ -172,7 +173,8 @@ def SetKeys(new_keys: dict):
 
     Parameters
     --------------------------------------------------------------------------
-    new_keys (dict): Dictionary containing key names and their new values.
+    new_keys (dict):            Dictionary containing key names and their
+                                new values.
                       Example: {"Your_GUC_Value": "new_value", ...}
     """
     # Get the absolute path to the current directory of Main.py
@@ -267,3 +269,16 @@ def ResetKeys():
         file.write(updated_content)
 
     print(f"Reset done successfully. {count} keys were updated.")
+
+def FetchHistoricalData(DataFrame, StartDate, EndDate):
+    """
+    DataFrame (pandas.DataFrame):   The DataFrame containing company tickers.
+    StartDate (str):                The start date for fetching historical data.
+    EndDate (str):                  The end date for fetching historical data.
+    pandas.DataFrame:               A DataFrame containing the historical data of the companies.
+    """
+    Data = yfinance.Tickers(DataFrame["Ticker"].tolist()).history(
+        start=StartDate, end=EndDate
+    )
+
+    return Data
