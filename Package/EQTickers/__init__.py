@@ -8,4 +8,5 @@ from .Scripts.Main import (
     SetKeys,
     GetKeys,
     ResetKeys,
+    FetchHistoricalData,
 )
