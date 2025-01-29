@@ -12,4 +12,6 @@ It includes:
 
 MongoDB is required to store and reuse the data more easily.
 
+Libraries: `requests`, `pymongo`, `pandas`, `numpy`  
+
 Guide is available <a href='https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Guide.ipynb'>here</a>.
