@@ -121,7 +121,7 @@ def GetJsonResponse(Ticker):
         Option["Underlying Exchange"] = Quote.get("fullExchangeName")
         Option["Underlying Type"] = Quote.get("typeDisp")
         Option["Underlying Quote Source"] = Quote.get("quoteSourceName")
-        Option["Underlying Dividend Yield"] = Quote.get("dividendYield")
+        Option["Underlying Dividend Yield"] = Quote.get("dividendYield")/100 
 
     return Chains
 
