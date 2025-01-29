@@ -245,7 +245,6 @@ def Chain(
     :param OpenInterestRange: List containing min and max open interest.
     :param VolumeRange: List containing min and max volume.
     :param LastPriceRange: List containing min and max last price.
-    :param ExpirationRange: List containing start and end expiration dates.
     :param ThirdFridaysOnly: Boolean to filter only options expiring on third Fridays.
     :return: A pandas DataFrame containing the filtered options data.
     """
