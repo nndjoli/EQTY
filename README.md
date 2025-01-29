@@ -11,3 +11,5 @@ It includes:
 - **Financials**: Manages access to specific financial data (balance sheet, income statement, etc.).  
 
 MongoDB is required to store and reuse the data more easily.
+
+Guide is available <a href='https://github.com/ndjoli-nathan/EQTYahoo/blob/main/Guide.ipynb'>here</a>.
