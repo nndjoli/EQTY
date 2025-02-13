@@ -1,4 +1,4 @@
-# EQTYahoo
+# EQTY
 
 This project provides a set of Python modules to extract data from Yahoo Finance and store it in MongoDB.  
 It includes:
