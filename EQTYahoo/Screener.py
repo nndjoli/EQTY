@@ -236,7 +236,7 @@ def GetAllEquityTickers():
         ScreenerDataMap.keys()
     )  # Starting from those in the screener
     TotalLength = len(TickerSymbols)
-    BatchSize = 1475
+    BatchSize = 100 #Was 1475 but isn't working anymore
     NumberOfBatches = math.ceil(TotalLength / BatchSize)
 
     ConsolidatedTickers = []
